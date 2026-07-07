@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隱私政策 - 記帳噗</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, "Segoe UI", "Microsoft JhengHei", sans-serif;
+    line-height: 1.75; max-width: 760px; margin: 0 auto;
+    padding: 24px 20px 64px; color: #1f2a26; background: #ffffff;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #e0e6e3; padding-bottom: 4px; }
+  .meta { color: #6b7b75; font-size: .9rem; margin-bottom: 1.5rem; }
+  a { color: #2e8b6f; }
+  strong { color: #14503b; }
+  code { background: #eef3f1; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 3rem; color: #6b7b75; font-size: .85rem; text-align: center; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6f0ec; background: #14201c; }
+    h2 { border-color: #2b3a34; }
+    .meta, footer { color: #93a6a0; }
+    strong { color: #7fd8b6; }
+    code { background: #23332d; }
+  }
+</style>
+</head>
+<body>
+<h1>隱私政策</h1>
+<p class="meta">記帳噗（Bookkeeping）｜版本 1.0.1｜最後修訂日期：2026-06-05</p>
+
+<h2>一、前言</h2>
+<p>本隱私政策說明「記帳噗」App（以下簡稱「本應用程式」）如何處理您的個人資料。請在使用本應用程式前詳細閱讀本政策。</p>
+
+<h2>二、資料蒐集範圍</h2>
+<p><strong>本應用程式不自建任何伺服器，開發者無法存取您的記帳內容，也不會將您的記帳資料傳送給任何廣告商、分析服務或第三方。</strong></p>
+<p>您的所有記帳資料（包括帳戶、分類、交易紀錄）僅儲存於：</p>
+<ol>
+  <li>您的本機裝置；以及</li>
+  <li>若您主動啟用雲端同步，您自己的 Google Drive 專屬資料夾（appDataFolder，僅本 App 可讀寫、計入您的 Drive 配額），或您自己的 Apple iCloud 儲存空間。</li>
+</ol>
+<p>下列情況需由您主動觸發，並會涉及第三方服務：</p>
+<p><strong>選擇性登入</strong>：若您主動使用 Google 或 Apple 帳號登入，本應用程式會於本機儲存您的帳號識別碼、（若提供）電子郵件與顯示名稱，僅作為識別雲端同步目的地之用，不會傳送至開發者伺服器。</p>
+<p><strong>雲端同步</strong>：登入後若您啟用雲端同步，App 會將記帳資料的快照寫入您自己的 Google Drive appDataFolder 或 iCloud 容器。資料始終保留在您自己的雲端帳戶中，開發者無法讀取。停用同步或刪除快照即可移除雲端資料。</p>
+<p><strong>廣告（僅免費精簡版）</strong>：免費精簡版內嵌的 Google AdMob 廣告 SDK，會依其運作機制蒐集裝置廣告識別碼、IP（用於概略地區）、裝置型號、作業系統等資訊以投放廣告。該資料由 Google 持有並依 Google 隱私政策管理，開發者無法取得。購買完整版後 AdMob 即停用，亦不再有任何資料蒐集。</p>
+
+<h2>三、第三方服務</h2>
+<p>本應用程式使用下列第三方服務，相關資料皆由各服務依其隱私政策管理，開發者不持有也不轉售：</p>
+<ul>
+  <li><strong>Google Sign-In / Sign in with Apple</strong>：第三方登入身份驗證（僅在您主動登入時觸發）。</li>
+  <li><strong>Google Drive API（appDataFolder）/ Apple iCloud</strong>：雲端同步存取您自己的雲端空間（僅在您啟用同步時觸發，資料屬於您本人）。</li>
+  <li><strong>Google AdMob</strong>：橫幅廣告投放（僅免費精簡版，購買完整版後停用）。</li>
+  <li><strong>Apple App Store / Google Play 內購服務</strong>：處理一次性買斷授權的購買與還原。</li>
+</ul>
+<p>本應用程式不會將您的記帳內容（金額、品項、備註）傳送至上述廣告或分析服務。</p>
+
+<h2>四、資料儲存位置</h2>
+<ul>
+  <li><strong>本機</strong>：所有記帳資料儲存於您裝置的本機 SQLite 資料庫。</li>
+  <li><strong>使用者自有雲端（僅啟用同步時）</strong>：以 JSON 快照形式儲存於您自己的 Google Drive appDataFolder 或 Apple iCloud 容器中，由您本人擁有，開發者無法讀取。</li>
+</ul>
+<p>本應用程式不持有任何使用者資料的伺服器副本。</p>
+
+<h2>五、資料備份與匯出</h2>
+<p>本應用程式提供 JSON 格式匯出功能，讓您自行備份資料。匯出的檔案儲存於您指定的位置，由您自行管理。</p>
+
+<h2>六、資料刪除</h2>
+<p>您可透過以下方式刪除本應用程式的所有資料：</p>
+<ol>
+  <li>前往「設定」→「資料管理」→「清除全部資料」</li>
+  <li>直接解除安裝本應用程式（將清除所有本機資料）</li>
+</ol>
+<p><strong>雲端資料刪除</strong>：若您已啟用雲端同步，可前往「設定」→「帳號」→「刪除雲端資料」移除儲存在您自己 Google Drive / iCloud 中的快照；亦可直接在您的 Drive / iCloud 管理介面手動刪除該檔案。本機資料不受影響。</p>
+<p><strong>登出 / 解除綁定</strong>：可前往「設定」→「帳號」→「登出」解除登入狀態，本機資料保留、僅停止後續同步。</p>
+
+<h2>七、兒童隱私</h2>
+<p>本應用程式不針對未滿 13 歲之兒童，亦不蒐集兒童的個人資料。</p>
+
+<h2>八、政策修訂</h2>
+<p>本隱私政策可能隨應用程式功能更新而修訂。版本號與修訂日期標示於文件頂端。重大變更將於應用程式內通知使用者。</p>
+
+<h2>九、聯絡方式</h2>
+<p>若您對本隱私政策有任何疑問，請透過以下方式聯絡我們：</p>
+<p>電子郵件：<a href="mailto:hiddenmaple7352@gmail.com">hiddenmaple7352@gmail.com</a></p>
+
+<footer>本政策適用於記帳噗 App 所有版本。</footer>
+</body>
+</html>
