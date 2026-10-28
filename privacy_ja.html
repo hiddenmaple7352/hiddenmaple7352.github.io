@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー - 記帳プー</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+    line-height: 1.75; max-width: 760px; margin: 0 auto;
+    padding: 24px 20px 64px; color: #1f2a26; background: #ffffff;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #e0e6e3; padding-bottom: 4px; }
+  .meta { color: #6b7b75; font-size: .9rem; margin-bottom: 1.5rem; }
+  a { color: #2e8b6f; }
+  strong { color: #14503b; }
+  code { background: #eef3f1; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  footer { margin-top: 3rem; color: #6b7b75; font-size: .85rem; text-align: center; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6f0ec; background: #14201c; }
+    h2 { border-color: #2b3a34; }
+    .meta, footer { color: #93a6a0; }
+    strong { color: #7fd8b6; }
+    code { background: #23332d; }
+  }
+</style>
+</head>
+<body>
+<h1>プライバシーポリシー</h1>
+<p class="meta">記帳プー（BudgetPuu）｜バージョン 1.0.2｜最終改定日：2026-10-28</p>
+
+<h2>1. はじめに</h2>
+<p>本プライバシーポリシーは、「記帳プー」アプリ（以下「本アプリ」）が個人情報をどのように取り扱うかを説明するものです。本アプリをご利用になる前に、本ポリシーをよくお読みください。</p>
+
+<h2>2. データ収集の範囲</h2>
+<p><strong>本アプリは独自のサーバーを運用していません。開発者はお客様の記帳データにアクセスできず、広告主、分析サービス、その他の第三者に送信することもありません。</strong></p>
+<p>お客様のすべての記帳データ（アカウント、カテゴリ、取引記録）は、以下にのみ保存されます。</p>
+<ol>
+  <li>お使いの端末のローカルストレージ</li>
+  <li>クラウド同期を有効にした場合、お客様ご自身の Google ドライブの専用フォルダ（appDataFolder、本アプリのみが読み書き可能で、お客様の Drive 容量に加算されます）、または Apple iCloud ストレージ</li>
+</ol>
+<p>以下の状況はお客様自身の操作によってのみ発生し、第三者サービスが関与します。</p>
+<p><strong>任意のサインイン</strong>：Google または Apple アカウントでサインインすることを選択した場合、本アプリはアカウント識別子、（提供された場合は）メールアドレスと表示名をローカルに保存します。これはクラウド同期先を識別する目的のみに使用され、開発者のサーバーに送信されることはありません。</p>
+<p><strong>クラウド同期</strong>：サインイン後にクラウド同期を有効にすると、本アプリは記帳データのスナップショットをお客様ご自身の Google ドライブ appDataFolder または iCloud コンテナに書き込みます。データは常にお客様ご自身のクラウドアカウントに保存され、開発者が読み取ることはできません。同期を無効にするかスナップショットを削除すると、クラウド上のデータも削除されます。</p>
+<p><strong>広告（無料版のみ）</strong>：無料版には Google AdMob SDK が組み込まれており、その通常の動作の一環として、広告配信のために端末の広告識別子、IP アドレス（大まかな地域の推定用）、端末モデル、OS などの情報を収集します。このデータは Google のプライバシーポリシーに基づき Google が保有・管理し、開発者はアクセスできません。完全版を購入すると AdMob は完全に無効化され、以降データは一切収集されません。</p>
+
+<h2>3. 第三者サービス</h2>
+<p>本アプリは以下の第三者サービスを利用しています。それぞれのデータは各サービスが自社のプライバシーポリシーに基づいて管理しており、開発者はこれを保有・転売しません。</p>
+<ul>
+  <li><strong>Google サインイン / Sign in with Apple</strong>：第三者によるサインイン認証（お客様が自らサインインを選択した場合のみ実行されます）</li>
+  <li><strong>Google Drive API（appDataFolder）/ Apple iCloud</strong>：お客様ご自身のクラウドストレージへのクラウド同期アクセス（同期を有効にした場合のみ実行され、データはお客様に帰属します）</li>
+  <li><strong>Google AdMob</strong>：バナー広告の配信（無料版のみ。完全版購入後は無効化）</li>
+  <li><strong>Apple App Store / Google Play アプリ内購入</strong>：買い切りライセンスの購入および復元の処理</li>
+</ul>
+<p>本アプリは、お客様の記帳内容（金額、項目、メモ）を上記の広告・分析サービスに送信することはありません。</p>
+
+<h2>4. データの保存場所</h2>
+<p><strong>ローカル</strong>：すべての記帳データは、お使いの端末のローカル SQLite データベースに保存されます。</p>
+<p><strong>お客様ご自身のクラウド（同期を有効にした場合のみ）</strong>：JSON スナップショットとして、お客様ご自身の Google ドライブ appDataFolder または Apple iCloud コンテナに保存され、お客様が所有します。開発者はこれを読み取ることができません。</p>
+<p>本アプリは、ユーザーデータのサーバー側のコピーを一切保持しません。</p>
+
+<h2>5. データのバックアップとエクスポート</h2>
+<p>本アプリは JSON 形式でのエクスポート機能を提供しており、お客様ご自身でデータをバックアップできます。エクスポートされたファイルはお客様が指定した場所に保存され、お客様ご自身で管理します。</p>
+
+<h2>6. データの削除</h2>
+<p>以下の方法で本アプリのデータを削除できます。詳しい手順は「<a href="delete_ja.html">アカウントとデータの削除</a>」をご覧ください。</p>
+<ol>
+  <li><strong>アカウントを削除（クラウドのバックアップと端末のデータをまとめて削除）</strong>：「設定」→「アカウントとバックアップ」→ お客様のアカウント →「ログアウト／アカウント削除」→「アカウントを削除」</li>
+  <li><strong>端末のデータのみ削除</strong>：「設定」→「アカウントとバックアップ」→「データの消去」から範囲を選択、または本アプリをアンインストールする（すべてのローカルデータが削除されます）</li>
+</ol>
+<p><strong>クラウドデータの削除</strong>：上記の「アカウントを削除」、または「データの消去」→「完全リセット（端末＋クラウド）」（サインイン中のみ表示）で、お客様ご自身の Google Drive / iCloud に保存された本アプリのバックアップ（バージョン履歴を含む）をすべて削除できます。お客様ご自身の Drive / iCloud の管理画面から直接手動で削除することも可能です。</p>
+<p><strong>ログアウト / 連携解除</strong>：「設定」→「アカウントとバックアップ」→ お客様のアカウント →「ログアウト／アカウント削除」→「ログアウト」からサインイン状態を解除できます。ローカルデータとクラウドのバックアップはそのまま保持され、以降の同期のみ停止します。</p>
+
+<h2>7. 児童のプライバシー</h2>
+<p>本アプリは13歳未満の児童を対象としておらず、児童の個人情報を意図的に収集することもありません。</p>
+
+<h2>8. ポリシーの改定</h2>
+<p>本プライバシーポリシーは、アプリの機能更新に伴い改定される場合があります。バージョン番号と改定日は本書冒頭に記載されます。重要な変更がある場合は、アプリ内で通知します。</p>
+
+<h2>9. お問い合わせ</h2>
+<p>本プライバシーポリシーについてご質問がある場合は、以下までご連絡ください：<a href="mailto:hiddenmaple7352@gmail.com">hiddenmaple7352@gmail.com</a></p>
+
+<footer>&copy; 2026 記帳プー BudgetPuu (HiddenMaple)</footer>
+</body>
+</html>

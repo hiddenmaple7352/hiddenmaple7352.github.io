@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アカウントとデータの削除 - 記帳プー</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+    line-height: 1.75; max-width: 760px; margin: 0 auto;
+    padding: 24px 20px 64px; color: #1f2a26; background: #ffffff;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #e0e6e3; padding-bottom: 4px; }
+  .meta { color: #6b7b75; font-size: .9rem; margin-bottom: 1.5rem; }
+  a { color: #2e8b6f; }
+  strong { color: #14503b; }
+  ol, ul { padding-left: 1.3rem; }
+  li { margin: 8px 0; }
+  footer { margin-top: 3rem; color: #6b7b75; font-size: .85rem; text-align: center; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6f0ec; background: #14201c; }
+    h2 { border-color: #2b3a34; }
+    .meta, footer { color: #93a6a0; }
+    strong { color: #7fd8b6; }
+  }
+</style>
+</head>
+<body>
+<h1>アカウントとデータの削除</h1>
+<p class="meta">記帳プー（BudgetPuu）｜開発者：HiddenMaple</p>
+
+<h2>重要なお知らせ</h2>
+<p>記帳プーは<strong>独自のサーバーを持たず、開発者はお客様の記帳データやアカウント情報を一切保有しておらず、アクセスすることもできません</strong>。データはお客様の端末と、クラウド同期を有効にした場合はお客様ご自身の Google ドライブ／Apple iCloud にのみ存在します。そのため「アカウントとデータの削除」は、すべてお客様ご自身の端末とクラウドアカウント上で行います。</p>
+
+<h2>データの削除方法</h2>
+<ol>
+  <li><strong>アカウントを削除（クラウドのバックアップと端末のデータをまとめて削除）</strong>：アプリの「設定」→「アカウントとバックアップ」→ お客様のアカウント →「ログアウト／アカウント削除」→「アカウントを削除」を選択します。または「設定」→「アカウントとバックアップ」→「データの消去」→「完全リセット（端末＋クラウド）」を選択します（サインイン中のみ表示）。確認すると、お客様ご自身の Google ドライブ／iCloud に保存された本アプリのバックアップ（バージョン履歴を含む）をすべて削除し、この端末の記帳データをすべて消去してからログアウトします。Google でサインインしている場合は、本アプリの Google ドライブへのアクセス権限も取り消されます。</li>
+  <li><strong>端末のデータのみ削除</strong>：「設定」→「アカウントとバックアップ」→「データの消去」→ 消去する範囲を選択します。または本アプリを端末からアンインストールします（すべてのローカルデータが削除されます）。クラウドのバックアップは残ります。</li>
+  <li><strong>ログアウトのみ</strong>：「設定」→「アカウントとバックアップ」→ お客様のアカウント →「ログアウト／アカウント削除」→「ログアウト」を選択すると、Google／Apple のサインインが解除されます（端末のデータとクラウドのバックアップはそのまま残り、以降の同期のみ停止します）。</li>
+  <li><strong>Apple でサインインの許可を取り消す</strong>（Apple でサインインした場合）：iPhone の「設定」→ ユーザ名 →「サインインとセキュリティ」→「Apple でサインイン」→ 本アプリを選択 →「Apple Account の使用を停止」。</li>
+</ol>
+<p>複数の端末で同じアカウントにサインインし、同期をオンにしている場合は、それぞれの端末でアカウント削除またはログアウトを行ってください。そうしないと、次回の同期時にほかの端末がデータを再びクラウドにアップロードします。お客様ご自身の Google ドライブ（「設定」→「アプリの管理」）や iCloud（「設定」→ ユーザ名 →「iCloud」→「ストレージを管理」）から、本アプリのデータを直接削除することもできます。</p>
+
+<h2>削除されるもの・残るもの</h2>
+<ul>
+  <li>上記の手順を行うと、対応する記帳データ（アカウント、カテゴリ、取引記録）とサインイン情報が削除されます。</li>
+  <li>開発者は<strong>サーバー側のコピーを一切保持していません</strong>。クラウドのバックアップはお客様ご自身のクラウドアカウントに保存され、すべてお客様が管理します。</li>
+  <li>アプリをアンインストールすると、ローカルデータは直ちに消去され、追加の保持期間はありません。</li>
+</ul>
+
+<h2>お問い合わせ</h2>
+<p>お困りの場合は、メールでお問い合わせください：<a href="mailto:hiddenmaple7352@gmail.com">hiddenmaple7352@gmail.com</a></p>
+
+<footer>&copy; 2026 記帳プー BudgetPuu (HiddenMaple)</footer>
+</body>
+</html>
